@@ -9,10 +9,10 @@ export default function NavIcon({ icon, to, label }: NavIconProps) {
 	return (
 		<Link
 			to={to}
-			className="flex flex-col items-center text-gray-800"
+			className="flex flex-col items-center text-gray-800 hover:text-gray-900"
 		>
 			{icon}
-			<span className="text-s mt-1 text-gray-700 dark:text-gray-300">{label}</span>
+			<span className="text-s mt-1 text-gray-700  dark:text-gray-300">{label}</span>
 		</Link>
 	);
 }
