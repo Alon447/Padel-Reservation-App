@@ -1,4 +1,4 @@
-import { CalendarCheck2, CircleUser, Home, Moon, Sun } from 'lucide-react';
+import { CalendarCheck, CalendarCheck2, CircleUser, Home, Moon, Sun } from 'lucide-react';
 import NavIcon from './NavIcon';
 import { useStore } from '../store/useStore';
 export default function Navbar() {
@@ -13,9 +13,14 @@ export default function Navbar() {
 					label={'בית'}
 				/>
 				<NavIcon
+					icon={<CalendarCheck />}
+					to="/bookings"
+					label={'ההזמנות שלי'}
+				/>
+				<NavIcon
 					icon={<CalendarCheck2 />}
 					to="/reservation"
-					label={'הזמנות'}
+					label={'הזמנת מגרש'}
 				/>
 				<NavIcon
 					icon={<CircleUser />}

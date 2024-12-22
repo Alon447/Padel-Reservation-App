@@ -2,6 +2,8 @@ import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
 import Home from './pages/Home';
 import { useStore } from './store/useStore';
 import { useEffect } from 'react';
+import BookCourt from './pages/BookCourt';
+import Reservations from './pages/Reservations';
 
 function App() {
 	const isDarkMode = useStore((state) => state.isDarkMode);
@@ -22,11 +24,19 @@ function App() {
 					element={<Home />}
 				/>
 				<Route
+					path="/bookings"
+					element={<Reservations />}
+				/>
+				<Route
 					path="/reservation"
-					element={<Home />}
+					element={<BookCourt />}
 				/>
 				<Route
 					path="/profile"
+					element={<Home />}
+				/>
+				<Route
+					path="/admin"
 					element={<Home />}
 				/>
 			</Routes>

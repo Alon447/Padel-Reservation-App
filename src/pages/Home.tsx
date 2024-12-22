@@ -1,10 +1,18 @@
 import Navbar from '../components/Navbar';
+import BookCourt from './BookCourt';
+import Login from './Login';
+import Register from './Register';
+import WelcomePage from './WelcomePage';
 
 export default function Home() {
 	return (
-		<div className="bg-pink-500 dark:bg-black">
-			<h1>ברוכים הבאים להזמנת מגרשי פאדל</h1>
-			<Navbar />
+		<div>
+			{/* <h1>ברוכים הבאים להזמנת מגרשי פאדל</h1> */}
+			<WelcomePage />
+			{/* <BookCourt /> */}
+			{/* <Login /> */}
+			{/* <Register /> */}
+			{/* <Navbar /> */}
 		</div>
 	);
 }
